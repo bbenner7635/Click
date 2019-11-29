@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css?family=Questrial&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  z-index: -1
+}
+
+body {
+  font-family: 'Questrial', sans-serif;
+  margin: 0;
+  z-index: -1
+}
+
+/* Social Media Icons */
+.fab {
+  text-align: center;
+  text-decoration: none;
+}
+.fab:hover {
+    opacity: 0.7;
+}
+.fa-google-drive {
+  color: white;
+}
+.fa-dropbox {
+  color: white;
+}
+.fa-facebook {
+  color: white;
+}
+
+/* Style the header */
+.header {
+  padding: 100px;
+  text-align: center;
+  background: #000000 url(/images/devices3.png) 100% 100% no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 2.5vw;
+  max-width:100%;
+  height:auto;
+}
+
+/* Increase the font size of the h1 element */
+.header h1 {
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 5.5vw;
+}
+
+/* Style the header */
+.smallheader {
+  padding: 50px;
+  text-align: center;
+  background-color: lightblue;
+  background-position: center center;
+  background-size: cover;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 30px;
+}
+
+/* Style the top navigation bar */
+#navbar {
+  overflow: hidden;
+  background-color: white;
+  font-size: 17.5px;
+  box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+}
+
+/* Style the navigation bar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 24px 30px;
+  text-decoration: none;
+  z-index: 500
+}
+
+/* Right-aligned link */
+#navbar a.right {
+  float: right;
+}
+
+/* Center-aligned link */
+#navbar a.center {
+  float: center;
+}
+
+/* Change color on hover */
+#navbar a:hover {
+  background-color: #e6e6e6;
+  color: black;
+}
+
+#navbar a.active {
+  background-color: #cccccc;
+  color: black;
+}
+
+#navbar a.rightactive {
+  float: right;
+  background-color: #cccccc;
+  color: black;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+#navbar a.icon {
+  display: none;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/* Main Area */
+#main {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  font-size: 1.5vw;
+}
+
+/* Increase the font size of the h2 element */
+#main h2 {
+  font-size: 3vw;
+}
+
+#main h6 {
+  font-size: 1vw;
+}
+
+/* Column container */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .navbar.responsive {position: relative;}
+  .navbar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .navbar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer a:not(:first-child) {display: none;}
+  .footer a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer.responsive {position: relative;}
+  .footer.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .footer.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  font-size: 1vw;
+}

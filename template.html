@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" class="animated fadeIn">
+<head>
+<title>Home | Click</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+<link rel="stylesheet" href="css/stylesheet.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/e8e04faf45.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <div class="navbar" id="navbar">
+    <a class="active" href="/">Home</a>
+    <a class="fab fa-google-drive" href="https://www.google.com/drive/" target="_blank"></a>
+    <a class="fab fa-dropbox" href="http://dropbox.com/" target="_blank"></a>
+    <a class="fab fa-facebook" href="http://facebook.com/" target="_blank"></a>
+    <a href="/contact.html">Contact</a>
+    <a href="javascript:void(0);" class="icon" onclick="responsiveNav()">
+      <i class="fa fa-bars"></i></a>
+  </div>
+
+  <div class="header">
+    <h1 style="font-size:5.5vw;">Click</h1>
+    <p style="font-size:2.5vw;">Share what you love. Earn money.</p>
+  </div>
+
+  <div id="main">
+    <h2 style="font-size:3vw;">Post anything you want</h2>
+    <br>
+    <img src="https://cdn.thumbr.io/0cf7fc822276dd909e740ce38a109ac3/KhPZbWboUluRxv8PG87L/https%3A%2F%2Fimage.flaticon.com/sprites/new_packs/1095574-photo-and-video.png/600/thumb.jpg" alt="File Icons" width="300" style="max-width:100%;height:auto;">
+    <br>
+    <br>
+    <br>
+    <p style="font-size:1.5vw;">Share images, videos, or other content to others instantly.</p>
+    <h6 style="font-size:1vw;">Icon made by <a href="https://www.flaticon.com/authors/srip">srip</a> from www.flaticon.com</h6>
+  </div>
+
+  <div id="main" style="background-color: #f2f2f2;">
+    <img src="https://image.flaticon.com/icons/svg/138/138285.svg" alt="Money" width="100" style="max-width:100%;height:auto;">
+    <br>
+    <br>
+    <h2 style="font-size:3vw;">Make money by sharing</h2>
+    <p style="font-size:1.5vw;">Earn cash per click on your posts.</p>
+    <h6 style="font-size:1vw;">Icon made by <a href="https://www.flaticon.com/authors/smashicons">Smashicons</a> from www.flaticon.com</h6>
+  </div>
+
+  <div id="main">
+    <h2 style="font-size:3vw;">Check your balance and post from any device</h2>
+    <br>
+    <img src="https://api.thumbr.io/e19220c2ad019d66787c2ba2cc18c083/KhPZbWboUluRxv8PG87L/https%3A%2F%2Fimage.flaticon.com/sprites/new_packs/124091-design-tools.png/600/thumb.jpg" alt="Device Icons" width="300" style="max-width:100%;height:auto;">
+    <br>
+    <br>
+    <br>
+    <p style="font-size:1.5vw;">Access your posts and balance from your iPhone, Android, PC, Mac, or Linux with the tap of a button.</p>
+    <h6 style="font-size:1vw;">Icon made by <a href="https://www.flaticon.com/authors/freepik">Freepik</a> from www.flaticon.com</h6>
+  </div>
+
+  <!-- <div id="main2">
+    <img src="https://image.flaticon.com/icons/svg/148/148976.svg" alt="Secure" width="100">
+    <br>
+    <br>
+    <h2>Coming soon...</h2>
+  </div> -->
+
+  <!-- Sticky Navbar -->
+  <script>
+    window.onscroll = function() {myFunction()};
+
+    var navbar = document.getElementById("navbar");
+    var sticky = navbar.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        navbar.classList.add("sticky")
+      } else {
+        navbar.classList.remove("sticky");
+      }
+    }
+
+    function responsiveNav() {
+      var x = document.getElementById("navbar");
+      if (x.className === "navbar") {
+        x.className += " responsive";
+      } else {
+        x.className = "navbar";
+      }
+    }
+
+    function responsiveFooter() {
+      var x = document.getElementById("footer");
+      if (x.className === "footer") {
+        x.className += " responsive";
+      } else {
+        x.className = "footer";
+      }
+    }
+  </script>
+
+  <div class="footer" id="footer">
+    <p>© Copyright Click. All rights reserved.</p>
+    <a href="javascript:void(0);" class="icon" onclick="responsiveFooter"></a>
+  </div>
+
+</body>
+</html>
