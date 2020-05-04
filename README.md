@@ -1,4 +1,4 @@
 # Click
 Repo for Click's website
 
-A social media platform for earning money by sharing what you love.
+Static HTML and CSS layout for social media platform
